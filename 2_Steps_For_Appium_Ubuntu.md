@@ -12,11 +12,26 @@ https://www.youtube.com/watch?v=R48_UFeY0cM
     /usr/lib/jvm/java-1.8.0-openjdk-amd64
     ```
   - Install Android SDK
-    - Download the tar.gz ball from Android SDK Site
+    - Download the tar.gz ball from Android SDK Site(https://developer.android.com/studio)
     - Unzip the tar file, and follow the instructions written inside the readme file
+    - Open Terminal in {unzipped android sdk}/bin folder
+    - Run the following command to open the Android SDK
+    ```shell
+    $ ./studio.sh
+    ```
+    - Let it download all the required files {All the files will be downloaded in /home/user/Android/sdk}
+    ```shell
+    $ echo $HOME
+    /home/user
+    ```
     - Setup Path for Android SDK(ANDROID_HOME, Platform-tools, and Tools)
     - On terminal
     ```shell
-    $ export ANDROID_HOME=$HOME/usr/Android/sdk
-    $ export PATH=$PATH:$ANDROID_HOME/tools
+    $ export ANDROID_HOME=$HOME/Android/sdk
+    $ export PATH=$PATH:$ANDROID_HOME/build-tools
     ```
+    - Check the Path is displaying in the output of below command 
+    ```shell
+    $ echo $PATH
+    ```
+    
