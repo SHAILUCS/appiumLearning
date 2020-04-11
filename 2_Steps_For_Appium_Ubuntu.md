@@ -47,10 +47,22 @@ https://www.youtube.com/watch?v=R48_UFeY0cM
 ### Create a Blank Android Project
 
 ### Press ctrl + shift + A >> type AVD Manager >> Hit Enter key
-  Create a "new virtual device" 
-  >> Select any android device 
-  >> Now let the files download(Approx file size is 1.1 GB)
+  - Create a "new virtual device"
+  - Select any android device 
+  - Now let the files download(Approx file size is 1.1 GB)
 
+### Grant current user access to /dev/kvm
+  - Open Terminal
+  - Run below command
+  ```shell
+  $ su
+  Enter Password
+  cd /dev
+  ls -l | grep kvm
+  sudo chmod guo+rwx kvm
+  Enter Password
+  ```
+  - 
 
   
   
