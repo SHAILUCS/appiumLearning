@@ -35,3 +35,25 @@ https://www.youtube.com/watch?v=R48_UFeY0cM
     $ echo $PATH
     ```
     
+    
+# Starting Emulator using Android SDK    
+### Open Android SDK
+  - To open Android SDK, go to extracted android-studio/bin folder and open terminal
+  - Run below command
+  ```shell
+  $ ./studio.sh
+  ```
+
+### Create a Blank Android Project
+
+### Press ctrl + shift + A >> type AVD Manager >> Hit Enter key
+  Create a "new virtual device" 
+  >> Select any android device 
+  >> Now let the files download(Approx file size is 1.1 GB)
+
+
+  
+  
+  
+    
+    
