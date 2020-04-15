@@ -1,4 +1,8 @@
+# SOURCES:
 https://www.youtube.com/watch?v=R48_UFeY0cM
+https://www.youtube.com/watch?v=i1tQ1pjEFWw
+http://www.automationtestinghub.com/apppackage-and-appactivity-name/
+http://www.automationtestinghub.com/install-additional-android-sdk-tools/
 
 # Steps to setup Appium on Ubuntu 18.04 LTS
 
@@ -35,6 +39,16 @@ https://www.youtube.com/watch?v=R48_UFeY0cM
     $ echo $PATH
     ```
     
+    - Setting path of Android sdk permanently
+    ```shell
+    $ gedit ~/.bashrc
+    ```
+    
+      - Add below lines at the bottom of the file and save and close
+      ```shell
+      export ANDROID_HOME=$HOME/Android/Sdk
+      export PATH=$PATH:$ANDROID_HOME/build-tools
+      ```
     
 # Starting Emulator using Android SDK    
 ### Open Android SDK
@@ -62,10 +76,37 @@ https://www.youtube.com/watch?v=R48_UFeY0cM
   sudo chmod guo+rwx kvm
   Enter Password
   ```
-  - 
+
+
+# Android Debug Bridge (adb)
+https://mobikul.com/install-external-app-android-emulator/
+### Install the adb to Install the .Apk File On The Emulator
+  ```shell
+  sudo apt install adb
+  adb kill-server
+  ```
+
+  - To install the .apk file on Emulator
+  ```shell
+  /home/Android/sdk/platform-tools $ ./adb install App.apk
+  ```
+
+  - To view the logs of the Emulator
+  ```shell
+  adb logcat > logfile.txt
+  ```
+
+# UIAutomation Viewer
+### To Install UIAutomation Viewer on Ubuntu
+  ```shell
+  sudo apt-get update
+  sudo apt-get install androidsdk-uiautomatorviewer
+  ```
+
+ 
 
   
   
   
     
-    
+Download and run the Appium Server    
